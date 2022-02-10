@@ -27,7 +27,8 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
           </p>
         </td>
       </tr>
-  
+</table>
+<table cellspacing="5" border="0">
       <tr>
         <td>
           <p align="center" dir="auto">
