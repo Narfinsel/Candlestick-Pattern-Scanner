@@ -1,6 +1,6 @@
 //+------------------------------------------------------------------+
 //|                                    CandlestickPatternScanner.mqh |
-//|                                                           SimonG |
+//|                                               Svetozar Pasulschi |
 //|                                             https://www.mql5.com |
 //+------------------------------------------------------------------+
 #property copyright "SimonG"
@@ -11,8 +11,7 @@
 #include <__SimonG\MS\CandlestickPatternScanner\Patterns\ConsolidationPattern.mqh>
 #include <__SimonG\MS\CandlestickPatternScanner\Patterns\EngulfingPattern.mqh>
 #include <__SimonG\MS\CandlestickPatternScanner\Patterns\StarPattern.mqh>
-#include <__SimonG\MS\CandlestickPatternScanner\Helpers\GeneralHelper.mqh>
-
+#include <__SimonG\Helpers\GeneralHelper.mqh>
 
 class CandlestickPatternScanner {
    private:
