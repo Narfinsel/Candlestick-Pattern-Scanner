@@ -16,8 +16,9 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
             </a>
           </p>
         </td>
-      </tr> 
-        <tr>
+      </tr>
+  
+      <tr>
         <td>
           <p align="center" dir="auto">
             <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-magenta-gold-v1.PNG">
@@ -26,9 +27,7 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
           </p>
         </td>
       </tr>
-</table>
   
-<table cellspacing="5" border="0">
       <tr>
         <td>
           <p align="center" dir="auto">
@@ -37,15 +36,10 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
             </a>
           </p>
         </td>
-        <td>
-          <p align="center" dir="auto">
-            <a target="_blank" rel="noopener noreferrer" href="/img/bearish-candle-patterns-v2.PNG">
-              <img src="/img/bearish-candle-patterns-v2.PNG" alt="Goal Getter Add New Goal">
-            </a>
-          </p>
-        </td>
       </tr>
 </table>
+  
+
 
 <p align="left" dir="auto">
   <a target="_blank" rel="noopener noreferrer" href="/cps-2-62-magenta-gold-gif.gif">
