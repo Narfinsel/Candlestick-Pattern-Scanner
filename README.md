@@ -9,14 +9,14 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 
 <table cellspacing="10" border="0">
       <tr>
-        <td width="500" height="150">
+        <td>
           <p align="center" dir="auto">
             <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-red-green-v1.PNG">
               <img src="/img/candle-patterns-red-green-v1.PNG" alt="Goal Getter Add New Goal">
             </a>
           </p>
         </td>
-        <td width="500" height="150">
+        <td>
           <p align="center" dir="auto">
             <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-magenta-gold-v1.PNG">
               <img src="/img/candle-patterns-magenta-gold-v1.PNG" alt="Goal Getter Add New Goal">
@@ -26,17 +26,17 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
       </tr>
   
       <tr>
-        <td width="500" height="150">
+        <td>
           <p align="center" dir="auto">
             <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-deeppink-aqua-v1.PNG">
               <img src="/img/candle-patterns-deeppink-aqua-v1.PNG" alt="Goal Getter Add New Goal">
             </a>
           </p>
         </td>
-        <td width="500" height="150">
+        <td>
           <p align="center" dir="auto">
-            <a target="_blank" rel="noopener noreferrer" href="/img/bearish-candle-patterns-v2">
-              <img src="/img/bearish-candle-patterns-v2" alt="Goal Getter Add New Goal">
+            <a target="_blank" rel="noopener noreferrer" href="/img/bearish-candle-patterns-v2.PNG">
+              <img src="/img/bearish-candle-patterns-v2.PNG" alt="Goal Getter Add New Goal">
             </a>
           </p>
         </td>
