@@ -1,6 +1,6 @@
 //+------------------------------------------------------------------+
 //|                                         ConsolidationPattern.mqh |
-//|                                                           SimonG |
+//|                                               Svetozar Pasulschi |
 //|                                             https://www.mql5.com |
 //+------------------------------------------------------------------+
 #property copyright "SimonG"
