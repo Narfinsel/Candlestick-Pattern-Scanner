@@ -8,10 +8,11 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 </p>
 
 <h2>1. Intro</h2>
-<em>Motivation</em> <p>Many online traders preffer to automate their trades, but they don't have good, reliable scripts, to help confidently detect candle-stick pattern like stars, engulfings and consolidation. I struggled with this alot and decided to make things easier for myself and other traders, by programming in and sharing this MQL5 Metatrader script.</p>
+<strong>Motivation</strong> <p>Many online traders preffer to automate their trades, but they don't have good, reliable scripts, to help confidently detect candle-stick pattern like stars, engulfings and consolidation. I struggled with this alot and decided to make things easier for myself and other traders, by programming in and sharing this MQL5 Metatrader script.</p>
 
 
 <h2>2. Project Description</h2>
+
 | Priority | BULLISH Candle Patterns | BEARISH Candle Patterns |
 | :---         |     :---:      |          ---: |
 | 1   | Bullish Consolidation     | Bearish Consolidation    |
