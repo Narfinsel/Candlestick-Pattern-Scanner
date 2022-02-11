@@ -14,6 +14,18 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 
 
 <h2>2. Project Description</h2>
+  <p align="center" dir="auto">
+    <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-red-green-v1.PNG">
+      <img src="/img/candle-patterns-red-green-v1.PNG" alt="Goal Getter Add New Goal">
+    </a>
+  </p>
+
+Based on priority, here are the candle-patterns that my scripts detects:
+<ul>
+  <li><em>Consolidations</em> are the strongest reversal signals since, they hold the most amount of information, often spaning across 3 to 6 bars.</li>
+  <li><em>Engulfings</em> represent highly reliable reversal patterns, particularly if their position & timing are right. They appear more frequently, especially in mid-to-higher timeframes.</li>
+  <li><em>Stars/Hammers</em>, are pretty reliable signals in high timeframes, if used togheter with other measurements and trading signals.</li>
+</ul>
 
 | Priority | BULLISH Candle Patterns | BEARISH Candle Patterns |
 | :---         |     :---       |          :--- |
@@ -22,16 +34,8 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 | 3     | Morning Star / Hammer       | Evening Star      |
 
 
+
 <table cellspacing="5" border="0">
-      <tr>
-        <td>
-          <p align="center" dir="auto">
-            <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-red-green-v1.PNG">
-              <img src="/img/candle-patterns-red-green-v1.PNG" alt="Goal Getter Add New Goal">
-            </a>
-          </p>
-        </td>
-      </tr>
       <tr>
         <td>
           <p align="center" dir="auto">
@@ -40,9 +44,7 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
             </a>
           </p>
         </td>
-      </tr>
-</table>
-<table cellspacing="5" border="0">
+      </tr>  
       <tr>
         <td>
           <p align="center" dir="auto">
