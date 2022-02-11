@@ -82,3 +82,13 @@ Based on priority, here are the candle-patterns that my scripts detects:
     <img src="/img/cps-1-deeppink-aqua-gif.gif" alt="Detecting Reversal Candles">
   </a>
 </p>
+
+
+<h2>4. How to Install and Run the Project</h2>
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
