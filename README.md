@@ -9,7 +9,9 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 
 <h2>1. Intro</h2>
 <strong>Motivation</strong> <p>Many online traders preffer to automate their trades, but they don't have good, reliable scripts, to help confidently detect candle-stick pattern like stars, engulfings and consolidation. I struggled with this alot and decided to make things easier for myself and other traders, by programming in and sharing this MQL5 Metatrader script.</p>
-<strong>Problem</strong> <p>One of the biggest problems in trading with EAs (Expert Advisors/ trading bots) is finding reliable signal than can be actually used in code. There are many scripts in the marketplace that do visually idendify patterns on the charts. But very few (if any) convert these candle-patterns into usable, code-readable object, ready-to-be-used, as part of the internal making of an algorithm.</p>
+<strong>Problem</strong> <p>One of the biggest problems in trading with EAs (Expert Advisors/ trading bots) is finding reliable signals that can be actually used in code. There are many scripts in the marketplace that do visually idendify patterns on the chart. But very few (if any) convert these candle-patterns into usable, code-ready objects, that can easily be incorporated as part of the internal making of an algorithm.</p>
+<strong>Solution</strong> <p>My script identifies reversal patterns, it converts them into objects stored in an array. There is an option to customize how rigid the detection should be, to mark out only the strongest reversal patterns. Visual square markings can be customized as well (color and thickness), on bullish and bearish patterns. I even optimized memory usage, by making sure to delete older pattern, or as soon as they are broken.</p>
+
 
 <h2>2. Project Description</h2>
 
