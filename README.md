@@ -85,17 +85,38 @@ Based on priority, here are the candle-patterns that my scripts detects:
 
 
 <h2>4. How to Install and Run the Project</h2>
-<p><strong>Step 1.</strong> Include the class-file in your trading robot. The file-path in the include section might change depending on where you place the file.</p>
+<p><strong>Step 1.</strong> Include the class-file in your trading robot. The file-path in the include section might change depending on where you place the file:</p>
 
 ```MQL5
 #include <__SimonG\MS\CandlestickPatternScanner\CandlestickPatternScanner.mqh>
 ```
-<p><strong>Step 2.</strong> Declare a global or local object of type "CandlestickPattern". 
-Note that "CandlestickPatternScanner" detects and throws up objects of type "CandlestickPattern", which are captured and stored at pointer location as defined below:</p>
+<p><strong>Step 2.</strong> Declare global or local variable of type <em>"CandlestickPatternScanner"</em> and <em>"CandlestickPattern"</em>. 
+Note that <em>"CandlestickPatternScanner"</em> detects and throws up objects of type <em>"CandlestickPattern"</em>, which are captured and stored at pointer location as defined below:</p>
 
 ```MQL5
-CandlestickPattern * patternDetected1;
+CandlestickPatternScanner * cps;
+CandlestickPattern * patternDetected;
 ```
 
+<p><strong>Step 3.</strong> Initiaze the CandlestickPatternScanner object. The best place for this is inside the OnInit() function.
 
+```MQL5
+int OnInit(){
+   cps = new CandlestickPatternScanner (Symbol(), PERIOD_CURRENT, 15, true);
+   cps.adjust_Settings_Graphic_BearishReversals (clrDeepPink, STYLE_SOLID, 4);
+   cps.adjust_Settings_Graphic_BullishReversals (clrAqua, STYLE_SOLID, 4);
+   cps.adjust_Settings_Chart_Subwindow (0, 0);
+   cps.adjust_Settings_Engulfings (0.75, 5);
+   cps.adjust_Settings_Stars (0.25, 40, 0.35);
+   cps.setDoDrawCandlePatternRect (true);
+}
+```
+  
+<p><strong>Step 4.</strong> Activate the CandlestickPatternScanner (cps), and set it up so that the CandlestickPattern (patternDetected) captures the most recent bar reversal pattern.</p>
+<p>This function detects the most recent reversal, and it also stores it inside an array of predefined-size (see previous step). Even though we write this piece of code inside <strong>OnTick()</strong>, becuase of the internal structure of CandlestickPatternScanner class, it is only called every PERIOD_CURRENT minutes. (5min, 15min, ... 1 Day)</p>
 
+```MQL5
+void OnTick(){
+   patternDetected = cps.updateAndReturn_Cps_onNewBar();
+}
+```
