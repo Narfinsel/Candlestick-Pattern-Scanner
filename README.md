@@ -120,3 +120,38 @@ void OnTick(){
    patternDetected = cps.updateAndReturn_Cps_onNewBar();
 }
 ```
+
+<p><strong>Step 5.</strong> Everything is set-up. Use both objects and the most recently detected reversal pattern (bullish / bearish) in logical algorithm to determine trading outcome.</p>
+
+```MQL5
+bool validateOpenBuy (){
+   if(patternDetected != NULL){
+         if(patternDetected.getPatternType() == BULLISH_ENGULFING)
+            return true;
+      else if(patternDetected.getPatternType() == BULLISH_MORNING_STAR)
+            return true;
+   }
+   return false;
+}
+
+bool validateOpenSell (){
+   if(patternDetected != NULL){
+         if(patternDetected.getPatternType() == BEARISH_ENGULFING)
+            return true;
+      else if(patternDetected.getPatternType() == BEARISH_EVENING_STAR)
+            return true;
+   }
+   return false;
+}
+```
+
+<p><strong>Step 6.</strong> Memory clean-up, optimization, object deletion. Clean-up is by default automatically performed by CandlestickPatternScanner in two ways:</p>
+<p>Patterns in the internal storage-array are deleted once broken. Secondly, since the array has a LIFO structure (Last-In-First-Out), whenever a new object is detected and stored, the last one is popped out and deleted. Eliminating the CandlestickPatternScanner, removes the array and the objects inside: </p>
+
+```MQL5
+void OnDeinit (const int reason){
+   delete cps;
+   delete patternDetected;
+}
+```
+
