@@ -43,29 +43,26 @@ Based on priority, here are the candle-patterns that my scripts detects:
           <img src="/img/candle-patterns-magenta-gold-v1.PNG" alt="Goal Getter Add New Goal">
         </a>
       </p>
-      <p> <b>Bearish</b> patterns are displayed in magenta color and they indicate a downward move in price. As shown in the graph above, this is true actually. </p>
-      <p> <b>Bullish</b> patterns appear in gold-yellow in this graph; bullish means that price will move upwards, and this appears to be the case here. </p>
+      <p><i> <b>Bearish</b> patterns are displayed in magenta color and they indicate a downward move in price. As shown in the graph above, this is true actually. </i></p>
+      <p><i> <b>Bullish</b> patterns appear in gold-yellow in this graph; bullish means that price will move upwards, and this appears to be the case here. </i></p>
     </td>
   </tr>
 </table>
+
 <table cellspacing="5" border="0">
-      <tr>
-        <td>
-          <p align="center" dir="auto">
-            <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-deeppink-aqua-v1.PNG">
-              <img src="/img/candle-patterns-deeppink-aqua-v1.PNG" alt="Goal Getter Add New Goal">
-            </a>
-          </p>
+  <tr>
+    <td>
+      <p align="center" dir="auto">
+        <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-deeppink-aqua-v1.PNG">
+          <img src="/img/candle-patterns-deeppink-aqua-v1.PNG" alt="Goal Getter Add New Goal">
+        </a>
+      </p>
           
-          <p>
-            <i>            
-              Similar example, but since color is a completely customizable feature, I chose alternative colors this time.
-              <b>Deep pink means bearish signal</b>. The price will go down, or reverse from uptrend to downtrend.
-              <b>Aqua blue is a bullish indicator</b>. Rising prices are expected, as the two bullish engulfings prove in this graphic.
-            </i>
-          </p>
-        </td>
-      </tr>
+      <p><i> Similar example, but since color is a completely customizable feature, I chose alternative colors this time. </i></p>
+      <p><i> <b>Deep pink means bearish signal</b>. The price will go down, or reverse from uptrend to downtrend. </i></p>
+      <p><i> <b>Aqua blue is a bullish indicator</b>. Rising prices are expected, as the two bullish engulfings prove in this graphic. </i></p>
+    </td>
+  </tr>
 </table>
   
 
