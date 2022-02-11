@@ -162,3 +162,7 @@ void OnDeinit (const int reason){
 | Bullish Eng.  | Price above MA50     | Open BUY trade.    |
 | Bearish Eng.     | Price below MA50       | Open SELL trade.     |
 
+| Pattern | Moving Average | Trading Outcome |
+| :---         |     :---      |          ---: |
+| Bullish   | Price above MA50     | Open BUY trade.    |
+| Bearish     | Price below MA50       | Open SELL trade.      |
