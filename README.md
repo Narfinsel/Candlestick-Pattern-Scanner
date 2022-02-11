@@ -1,5 +1,5 @@
 # Candlestick-Pattern-Scanner
-CandlestickPatternScanner is a utility class that helps Expert Advisors and trading bots to efficiently detect reversal.
+CandlestickPatternScanner is a utility class that helps Expert Advisors and trading bots to efficiently detect reversal candle pattern. These special patterns can be used as possible indications of trend-reversal, especially in conjunction with other indicators and signals.
 
 <p align="left" dir="auto">
   <a target="_blank" rel="noopener noreferrer" href="/cps-1-31-deeppink-aqua-gif.gif">
@@ -7,6 +7,11 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
   </a>
 </p>
 
+<h2>1. Intro</h2>
+<p>**Motivation**. Many online traders preffer to automate their trades, but they don't have good, reliable scripts, to help confidently detect candle-stick pattern like stars, engulfings and consolidation. I struggled with this alot and decided to make things easier for myself and other traders, by programming in and sharing this MQL5 Metatrader script.</p>
+
+
+<h2>2. Project Description</h2>
 | Priority | BULLISH Candle Patterns | BEARISH Candle Patterns |
 | :---         |     :---:      |          ---: |
 | 1   | Bullish Consolidation     | Bearish Consolidation    |
