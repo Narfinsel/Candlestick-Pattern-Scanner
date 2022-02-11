@@ -36,21 +36,17 @@ Based on priority, here are the candle-patterns that my scripts detects:
 
 
 <table cellspacing="5" border="0">
-      <tr>
-        <td>
-          <p align="center" dir="auto">
-            <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-magenta-gold-v1.PNG">
-              <img src="/img/candle-patterns-magenta-gold-v1.PNG" alt="Goal Getter Add New Goal">
-            </a>
-          </p>
-          
-
-            <i>
-              <b>Bearish</b> patterns are displayed in magenta color and they indicate a downward move in price. As shown in the graph above, this is true actually.
-              <b>Bullish</b> patterns appear in gold-yellow in this graph; bullish means that price will move upwards, and this appears to be the case here.
-            </i>
-        </td>
-      </tr>
+  <tr>
+    <td>
+      <p align="center" dir="auto">
+        <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-magenta-gold-v1.PNG">
+          <img src="/img/candle-patterns-magenta-gold-v1.PNG" alt="Goal Getter Add New Goal">
+        </a>
+      </p>
+      <p> <b>Bearish</b> patterns are displayed in magenta color and they indicate a downward move in price. As shown in the graph above, this is true actually. </p>
+      <p> <b>Bullish</b> patterns appear in gold-yellow in this graph; bullish means that price will move upwards, and this appears to be the case here. </p>
+    </td>
+  </tr>
 </table>
 <table cellspacing="5" border="0">
       <tr>
