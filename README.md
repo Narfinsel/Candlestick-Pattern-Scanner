@@ -7,6 +7,12 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
   </a>
 </p>
 
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
+
 <table cellspacing="5" border="0">
       <tr>
         <td>
