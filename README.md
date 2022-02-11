@@ -43,6 +43,13 @@ Based on priority, here are the candle-patterns that my scripts detects:
               <img src="/img/candle-patterns-magenta-gold-v1.PNG" alt="Goal Getter Add New Goal">
             </a>
           </p>
+          <p>
+            <p>
+              <b>Bearish</b> patterns are displayed in magenta color and they indicate a downward move in price. As shown in the graph above, this is true actually.
+              <b>Bullish</b> patterns appear in gold-yellow in this graph; bullish means that price will move upwards, and this appears to be the case here.
+            </p>
+          </p>
+          
         </td>
       </tr>  
       <tr>
@@ -51,6 +58,11 @@ Based on priority, here are the candle-patterns that my scripts detects:
             <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-deeppink-aqua-v1.PNG">
               <img src="/img/candle-patterns-deeppink-aqua-v1.PNG" alt="Goal Getter Add New Goal">
             </a>
+          </p>
+          <p>
+            Similar example, but since color is a completely customizable feature, I chose alternative colors this time.
+            <b>Deep pink means bearish signal</b>. The price will go down, or reverse from uptrend to downtrend.
+            <b>Aqua blue is a bullish indicator</b>. Rising prices are expected, as the two bullish engulfings prove in this graphic.          
           </p>
         </td>
       </tr>
