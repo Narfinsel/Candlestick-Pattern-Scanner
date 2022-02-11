@@ -85,12 +85,12 @@ Based on priority, here are the candle-patterns that my scripts detects:
 
 
 <h2>4. How to Install and Run the Project</h2>
-<strong>Step 1.</strong> Include the class-file in your trading robot. The file-path in the include section might change depending on where you place the file.
+<p><strong>Step 1.</strong> Include the class-file in your trading robot. The file-path in the include section might change depending on where you place the file.</p>
 ```MQL5
 #include <__SimonG\MS\CandlestickPatternScanner\CandlestickPatternScanner.mqh>
 ```
-<strong>Step 2.</strong> Declare a global or local object of type "CandlestickPattern". 
-Note that "CandlestickPatternScanner" detects and throws up objects of type "CandlestickPattern", which are captured and stored at pointer location as defined below:
+<p><strong>Step 2.</strong> Declare a global or local object of type "CandlestickPattern". 
+Note that "CandlestickPatternScanner" detects and throws up objects of type "CandlestickPattern", which are captured and stored at pointer location as defined below:</p>
 ```MQL5
 CandlestickPattern * patternDetected1;
 ```
