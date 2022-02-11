@@ -51,7 +51,8 @@ Based on priority, here are the candle-patterns that my scripts detects:
             </i>
         </td>
       </tr>
-  
+</table>
+<table cellspacing="5" border="0">
       <tr>
         <td>
           <p align="center" dir="auto">
