@@ -57,7 +57,6 @@ Based on priority, here are the candle-patterns that my scripts detects:
           <img src="/img/candle-patterns-deeppink-aqua-v1.PNG" alt="Goal Getter Add New Goal">
         </a>
       </p>
-          
       <p><i> Similar example, but since color is a completely customizable feature, I chose alternative colors this time. </i></p>
       <p><i> <b>Deep pink means bearish signal</b>. The price will go down, or reverse from uptrend to downtrend. </i></p>
       <p><i> <b>Aqua blue is a bullish indicator</b>. Rising prices are expected, as the two bullish engulfings prove in this graphic. </i></p>
