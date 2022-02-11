@@ -155,3 +155,10 @@ void OnDeinit (const int reason){
 }
 ```
 
+<h2>5. How to Use the Project</h2>
+<p>Now that we know how to install and run the project, let's see how to use it. I shall provide a bunch of ideas for trading robots:</p>
+| Pattern | Moving Average | Moving Average |
+| :---         | :---      | :---      |
+| Bullish Eng.  | Price above MA50     | Open BUY trade.    |
+| Bearish Eng.     | Price below MA50       | Open SELL trade.     |
+
