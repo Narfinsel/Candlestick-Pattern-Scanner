@@ -7,10 +7,11 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
   </a>
 </p>
 
-| Left-aligned | Center-aligned | Right-aligned |
+| Priority | BULLISH Candle Patterns | BEARISH Candle Patterns |
 | :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+| 1   | Bullish Consolidation     | Bearish Consolidation    |
+| 2     | Bullish Engulfing       | Bearish Engulfing      |
+| 3     | Morning Star / Hammer       | Evening Star      |
 
 
 <table cellspacing="5" border="0">
