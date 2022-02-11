@@ -16,7 +16,7 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 <h2>2. Project Description</h2>
 
 | Priority | BULLISH Candle Patterns | BEARISH Candle Patterns |
-| :---         |     :---:      |          ---: |
+| :---         |     :---       |          :--- |
 | 1   | Bullish Consolidation     | Bearish Consolidation    |
 | 2     | Bullish Engulfing       | Bearish Engulfing      |
 | 3     | Morning Star / Hammer       | Evening Star      |
