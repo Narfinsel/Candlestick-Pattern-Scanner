@@ -190,8 +190,8 @@ void OnDeinit (const int reason){
 
 <h2>6. Credits</h2>
 <p>I can't credit anyone directly, but this section seems appropriate because I owe special thanks to so many course creators, chanels, youtubers.</p>
-1. MQL4 Programming. Visit https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured    
-2. ForexBoat Team. Check out https://www.udemy.com/course/learn-mql4/                           
+<p>1. MQL4 Programming. Visit https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured </p>
+<p>2. ForexBoat Team. Check out https://www.udemy.com/course/learn-mql4/ </p> 
 <p>These guys create amazing content and I have learned so much from them!</p>
 
 <h2>7. License</h2>
