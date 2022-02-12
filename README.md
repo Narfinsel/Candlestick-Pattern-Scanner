@@ -27,8 +27,8 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 
 | Reversal  | STARS & HAMMERS                                                               | ENGULFINGS                                                                    | CONSOLIDATIONS 																	   |
 | :---      | :---                                                                      | :---                                                                          	| :---																				   |															
-| 1         | <img src="/img/patterns/bearish-evening-star.PNG"><br> <i>Evening Star</i>   	| <img src="/img/patterns/bearish-engulfing.PNG"><br> <i>Bearish Engulfing</i>  | <img src="/img/patterns/bearish-consolidation.PNG"><br> <i>Bearish Consolidation</i> |
-| 2         | <img src="/img/patterns/bullish-morning-star.PNG"><br> <i>Morning Star</i>   	| <img src="/img/patterns/bullish-engulfing.PNG"><br> <i>Bullish Engulfing</i>  | <img src="/img/patterns/bullish-consolidation.PNG"><br> <i>Bullish Consolidation</i> |
+| BEARISH         | <img src="/img/patterns/bearish-evening-star.PNG"><br> <i>Evening Star</i>   	| <img src="/img/patterns/bearish-engulfing.PNG"><br> <i>Bearish Engulfing</i>  | <img src="/img/patterns/bearish-consolidation.PNG"><br> <i>Bearish Consolidation</i> |
+| BULLISH         | <img src="/img/patterns/bullish-morning-star.PNG"><br> <i>Morning Star</i>   	| <img src="/img/patterns/bullish-engulfing.PNG"><br> <i>Bullish Engulfing</i>  | <img src="/img/patterns/bullish-consolidation.PNG"><br> <i>Bullish Consolidation</i> |
 
 
 
