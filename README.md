@@ -164,7 +164,7 @@ void OnDeinit (const int reason){
 | Bearish     | Price below MA50  | Open SELL trade.  |
 
 
-| Pattern | Moving Average | Trading Outcome |
-| :---         |     :---      |          ---: |
-| Bullish   | Price above MA50     | Open BUY trade.    |
-| Bearish     | Price below MA50       | Open SELL trade.      |
+| Pattern                         | Price                            | MACD                          | Trading Outcome   |
+| :---                            |     :---                         |     :---                      |          ---:     |
+| Bullish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Value above Signal on H1/H4.  | Open BUY trade.   |
+| Bearish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Signal above Value on H1/H4.  | Open SELL trade.  |
