@@ -158,13 +158,42 @@ void OnDeinit (const int reason){
 <h2>5. How to Use the Project</h2>
 <p>Now that we know how to install and run the project, let's see how to use it. I shall provide a bunch of ideas for trading robots:</p>
 
-| Pattern     | Moving Average    | Trading Outcome   |
-| :---        |     :---          |          ---:     |
-| Bullish     | Price above MA50  | Open BUY trade.   |
-| Bearish     | Price below MA50  | Open SELL trade.  |
+| Pattern            | Moving Average    | Trading Outcome   |
+| :---               |     :---          |          ---:     |
+| Bullish Pattern    | Price above MA50  | Open BUY trade.   |
+| Bearish Pattern    | Price below MA50  | Open SELL trade.  |
+
+
+| Pattern            | RSI                  | Trading Outcome   |
+| :---               |     :---             |          ---:     |
+| Bullish Pattern    | Overbought (RSI<30)  | Open BUY trade.   |
+| Bearish Pattern    | Oversold (RSI>30)    | Open SELL trade.  |
 
 
 | Pattern                         | Price                            | MACD                          | Trading Outcome   |
 | :---                            |     :---                         |     :---                      |          ---:     |
 | Bullish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Value above Signal on H1/H4.  | Open BUY trade.   |
 | Bearish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Signal above Value on H1/H4.  | Open SELL trade.  |
+
+
+| Pattern            | Bollinger Bands         | Trading Outcome   |
+| :---               |     :---                |          ---:     |
+| Bullish Pattern    | Price above Upper Band  | Open BUY trade.   |
+| Bearish Pattern    | Price below Lower Band  | Open SELL trade.  |
+
+
+| Pattern            | Ichimoku Cloud           | Trading Outcome   |
+| :---               |     :---                 |          ---:     |
+| Bullish Pattern    | Green Cloud (Leading A)  | Open BUY trade.   |
+| Bearish Pattern    | Red Cloud (Leading B)    | Open SELL trade.  |
+
+
+<h2>6. Credits</h2>
+<p>I can't credit anyone directly, but this section seems appropriate because I owe special thanks to so many course creators, chanels, youtubers.</p>
+1. MQL4 Programming. Visit https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured
+2. ForexBoat Team. Check out https://www.udemy.com/course/learn-mql4/
+<p>These guys create amazing content and I have learned so much from them!</p>
+
+<h2>7. License</h2>
+<p>Feel free to use this project for yourself. Or to edit it, use bits of it. Do not commercialize it!
+My Candlestick-Pattern-Scanner project is licensed under the GNU AGPLv3 license. Check out the licence link to better understand what you can and cannot do with this code. </p>
