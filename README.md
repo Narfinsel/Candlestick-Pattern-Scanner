@@ -27,9 +27,9 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 
 | Priority  | BULLISH Candle Patterns                                                   | BEARISH Candle Patterns |
 | :---      |     :---                                                                  |          :--- |
-| 1         | <img src="/img/patterns/bearish-evening-star.PNG"> <i>Evening Star.</i>   | Bearish Consolidation    |
-| 2         | <img src="/img/patterns/bearish-evening-star.PNG">                        | Bearish Engulfing      |
-| 3         | <img src="/img/patterns/bearish-evening-star.PNG">                        | Evening Star      |
+| 1         | <img src="/img/patterns/bearish-evening-star.PNG"> <br /><i>Evening Star.</i>   | Bearish Consolidation    |
+| 2         | <img src="/img/patterns/bearish-evening-star.PNG"> <br><i>Evening Star.</i>   | Bearish Engulfing      |
+| 3         | <img src="/img/patterns/bearish-evening-star.PNG"> /<i>Evening Star.</i>   | Evening Star      |
 
 
 Based on priority, here are the candle-patterns that my scripts detects:
