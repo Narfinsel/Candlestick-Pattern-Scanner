@@ -25,11 +25,12 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
   <p>What are <strong><em>bullish reversal patterns</em></strong>? [GREEN] Bullish patterns (consolidations, engulfings and morning stars) are a signal of rising prices. Prices will be moving upwards, or reverse from downtrend to uptrend.</p>  
 
 
-| Priority  | BULLISH Candle Patterns                                                   | BEARISH Candle Patterns |
-| :---      |     :---                                                                  |          :--- |
-| 1         | <img src="/img/patterns/bearish-evening-star.PNG"> <br /><i>Evening Star.</i>   | Bearish Consolidation    |
-| 2         | <img src="/img/patterns/bearish-evening-star.PNG"> <br><i>Evening Star.</i>   | Bearish Engulfing      |
-| 3         | <img src="/img/patterns/bearish-evening-star.PNG"> /<i>Evening Star.</i>   | Evening Star      |
+| Reversal  | STARS & HAMMERS                                                               | ENGULFINGS                                                                    |
+CONSOLIDATIONS |
+| :---      |     :---                                                                      | :---                                                                          |
+| 1         | <img src="/img/patterns/bearish-evening-star.PNG"><br> <i>Evening Star</i>   | <img src="/img/patterns/bearish-engulfing.PNG"><br> <i>Bearish Engulfing</i>  |<img src="/img/patterns/bearish-consolidation.PNG"><br> <i>Bearish Consolidation</i> |
+| 2         | <img src="/img/patterns/bullish-morning-star.PNG"><br> <i>Morning Star</i>   | <img src="/img/patterns/bullish-engulfing.PNG"><br> <i>Bullish Engulfing</i>  |<img src="/img/patterns/bullish-consolidation.PNG"><br> <i>Bullish Consolidation</i> |
+
 
 
 Based on priority, here are the candle-patterns that my scripts detects:
