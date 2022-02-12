@@ -106,7 +106,7 @@ CandlestickPattern * CandlestickPatternScanner :: updateAndReturn_Cps_onNewBar (
 
 
 CandlestickPattern * CandlestickPatternScanner :: extract_candlestick_pattern (CandlestickPattern *& anArray[], int bar){
-   CandlestickPattern * consolidation=NULL, * engulf, * star;
+   CandlestickPattern * consolidation, * engulf, * star;
    consolidation = getPossible_Consolidation_atPosition (this.cpsSymbol, this.cpsTimeframe, 1);
    engulf = getPossible_Engulfing_atPosition (this.cpsSymbol, this.cpsTimeframe, 1, this.cpsEngdMinFractionShortVsLongLength, this.cpsEngMinShortEngulfBarLength);
    star = getPossible_Star_atPosition (this.cpsSymbol, this.cpsTimeframe, 1, this.cpsStarMinPercOCofHL, this.cpsStarMinHiLoLength);
@@ -118,7 +118,7 @@ CandlestickPattern * CandlestickPatternScanner :: extract_candlestick_pattern (C
       star = NULL;
       str = "CONSOLIDATION";
    }
-   if(consolidation == NULL  &&  engulf != NULL){
+   else if(consolidation == NULL  &&  engulf != NULL){
       newPattern = engulf;
       star = NULL;
       str = "ENGULF";
@@ -131,7 +131,6 @@ CandlestickPattern * CandlestickPatternScanner :: extract_candlestick_pattern (C
       newPattern = NULL;
       str = "n/a";
    }
-   //newPattern = engulf;
    if( newPattern != NULL  &&  this.cpsDoDrawCandleRects == true){
       appendPatternToBeginningOfArray ( newPattern, anArray);
                
