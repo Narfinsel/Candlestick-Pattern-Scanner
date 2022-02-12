@@ -97,7 +97,7 @@ Based on priority, here are the candle-patterns that my scripts detects:
 ```MQL5
 #include <__SimonG\MS\CandlestickPatternScanner\CandlestickPatternScanner.mqh>
 ```
-<p><strong>Step 2.</strong> Declare global or local variable of type <em>"CandlestickPatternScanner"</em> and <em>"CandlestickPattern"</em>. 
+<p><strong>Step 2.</strong> Declare two global or local variables of type <em>"CandlestickPatternScanner"</em> and <em>"CandlestickPattern"</em>. 
 Note that <em>"CandlestickPatternScanner"</em> detects and throws up objects of type <em>"CandlestickPattern"</em>, which are captured and stored at pointer location as defined below:</p>
 
 ```MQL5
