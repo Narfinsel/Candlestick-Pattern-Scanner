@@ -1,5 +1,5 @@
 # Candlestick-Pattern-Scanner
-CandlestickPatternScanner is a utility class that helps Expert Advisors and trading bots to efficiently detect reversal candle pattern. These special patterns can be used as possible indications of trend-reversal, especially in conjunction with other indicators and signals.
+The Candlestick Pattern Scanner is a utility class that helps Expert Advisors and trading bots to efficiently detect reversal candle patterns. These special patterns can be used as potential indications of trend-reversals, especially in conjunction with other events, indicators and signals.
 
 <p align="left" dir="auto">
   <a target="_blank" rel="noopener noreferrer" href="/cps-1-31-deeppink-aqua-gif.gif">
@@ -8,21 +8,21 @@ CandlestickPatternScanner is a utility class that helps Expert Advisors and trad
 </p>
 
 <h2>1. Intro</h2>
-<strong>Motivation</strong> <p>Many online traders preffer to automate their trades, but they don't have good, reliable scripts, to help confidently detect candle-stick pattern like stars, engulfings and consolidation. I struggled with this alot and decided to make things easier for myself and other traders, by programming in and sharing this MQL5 Metatrader script.</p>
-<strong>Problem</strong> <p>One of the biggest problems in trading with EAs (Expert Advisors/ trading bots) is finding reliable signals that can be actually used in code. There are many scripts in the marketplace that do visually idendify patterns on the chart. But very few (if any) convert these candle-patterns into usable, code-ready objects, that can easily be incorporated as part of the internal making of an algorithm.</p>
-<strong>Solution</strong> <p>My script identifies reversal patterns, it converts them into objects stored in an array. There is an option to customize how rigid the detection should be, to mark out only the strongest reversal patterns. Visual square markings can be customized as well (color and thickness), on bullish and bearish patterns. I even optimized memory usage, by making sure to delete older pattern, or as soon as they are broken.</p>
+<strong>Motivation</strong> <p>Many online traders preffer to automate their trading strategies, but they don't have good, reliable scripts, to help confidently detect candle-stick pattern like stars, engulfings and consolidation. I struggled with this alot and decided to make things easier for myself and other traders, by programming in and sharing this MQL5 Metatrader script.</p>
+<strong>Problem</strong> <p>One of the biggest problems in trading with EAs (Expert Advisors/ trading bots) is finding reliable signals that can actually be used in code. There are many scripts in the marketplace that do visually idendify patterns on the chart, by drawing visual aids. But very few (if any) convert these candle-patterns into usable, code-ready objects, that can easily be incorporated as part of the internal making of an algorithm. Too many scripts only show patterns on the graphs, but that is useless for the trading bots, since they need objects from which to read data, to base decisions on.</p>
+<strong>Solution</strong> <p>My script identifies reversal patterns, it converts them into objects stored in an array. There is an option to customize how rigid the pattern-detection should be, to mark out only the strongest reversal signals. Visual square markings can be customized as well (color, style and thickness), for bullish and bearish patterns. I even optimized memory usage, by making sure to delete older patterns, or broken ones. Reversal patterns have many attributes and my code can read, change, and distinguish reversals based on their properties - to decide which trading actions to undertake.</p>
 
 
 <h2>2. Project Description</h2>
   <p align="center" dir="auto">
     <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-red-green-v1.PNG">
-      <img src="/img/candle-patterns-red-green-v1.PNG" alt="Goal Getter Add New Goal">
+      <img src="/img/candle-patterns-red-green-v1.PNG" alt="Green Red Bullish Bearish Reversals">
     </a>
   </p>
 
 <h3>Definition & Terminology</h3>
-  <p>What are <strong><em>bearish reversal patterns</em></strong>? [RED] Bearish consolidations & engulfings, along with evening stars are price bar signals that indicate that the prices is about to go downwards. It will continue dropping or reverse after an uptrend.</p>
-  <p>What are <strong><em>bullish reversal patterns</em></strong>? [GREEN] Bullish patterns (consolidations, engulfings and morning stars) are a signal of rising prices. Prices will be moving upwards, or reverse from downtrend to uptrend.</p>  
+  <p>What are <strong><em>bearish reversal patterns</em></strong>? [RED] Bearish consolidations & engulfings, along with evening stars are price bar signals, indicating that the price will be going downwards. It will continue dropping or reverse & fall, after an uptrend.</p>
+  <p>What are <strong><em>bullish reversal patterns</em></strong>? [GREEN] Bullish patterns (consolidations, engulfings and morning stars) are a signal of rising prices. The price will be moving upwards, or reverse from downtrend to uptrend.</p>  
 
 
 | Reversal  | STARS & HAMMERS                                                               | ENGULFINGS                                                                    | CONSOLIDATIONS 																	   |
