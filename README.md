@@ -32,11 +32,11 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 
 
 
-Based on priority, here are the candle-patterns that my scripts detects:
+Based on priority, my scripts detects the following candle-patterns:
 <ul>
-  <li><em>Consolidations</em> are the strongest reversal signals since, they hold the most amount of information, often spaning across 3 to 6 bars.</li>
-  <li><em>Engulfings</em> represent highly reliable reversal patterns, particularly if their position & timing are right. They appear more frequently, especially in mid-to-higher timeframes.</li>
-  <li><em>Stars/Hammers</em>, are pretty reliable signals in high timeframes, if used togheter with other measurements and trading signals.</li>
+  <li><em>Consolidations</em> are the strongest reversal signals since they hold the highest amount of trading information, spaning across 3 to 6 bars.</li>
+  <li><em>Engulfings</em> represent highly trustworthy reversal patterns, particularly if their position & timing are right. They appear more frequently in mid-to-higher timeframes.</li>
+  <li><em>Stars & Hammers</em>, are pretty reliable signals in high timeframes, if used togheter with other measurements and trading signals.</li>
 </ul>
 
 | Priority | BULLISH Candle Patterns | BEARISH Candle Patterns |
@@ -52,11 +52,11 @@ Based on priority, here are the candle-patterns that my scripts detects:
     <td>
       <p align="center" dir="auto">
         <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-magenta-gold-v1.PNG">
-          <img src="/img/candle-patterns-magenta-gold-v1.PNG" alt="Goal Getter Add New Goal">
+          <img src="/img/candle-patterns-magenta-gold-v1.PNG" alt="Candlestick Patterns Magenta and Gold">
         </a>
       </p>
-      <p><i> <b>Bearish</b> patterns are displayed in magenta color and they indicate a downward move in price. As shown in the graph above, this is true actually. </i></p>
-      <p><i> <b>Bullish</b> patterns appear in gold-yellow in this graph; bullish means that price will move upwards, and this appears to be the case here. </i></p>
+      <p><i> <b>Bearish</b> patterns are encircled in a magenta color, and they indicate a downward move in price. As shown in the graph above, this is actually true. </i></p>
+      <p><i> <b>Bullish</b> patterns appear in gold-yellow; bullish means that price will move upwards, and this appears to be the case here as well. </i></p>
     </td>
   </tr>
 </table>
@@ -66,12 +66,12 @@ Based on priority, here are the candle-patterns that my scripts detects:
     <td>
       <p align="center" dir="auto">
         <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-deeppink-aqua-v1.PNG">
-          <img src="/img/candle-patterns-deeppink-aqua-v1.PNG" alt="Goal Getter Add New Goal">
+          <img src="/img/candle-patterns-deeppink-aqua-v1.PNG" alt="Candlestick Patterns Deep Pink and Aqua">
         </a>
       </p>
-      <p><i> Similar example, but since color is a completely customizable feature, I chose alternative colors this time. </i></p>
-      <p><i> <b>Deep pink means bearish signal</b>. The price will go down, or reverse from uptrend to downtrend. </i></p>
-      <p><i> <b>Aqua blue is a bullish indicator</b>. Rising prices are expected, as the two bullish engulfings prove in this graphic. </i></p>
+      <p><i> Similar example, but since color is a completely customizable feature, I chose an alternative color scheme this time. </i></p>
+      <p><i> <b>Deep pink means bearish signal</b>. The price will drop, or reverse from uptrend to downtrend. </i></p>
+      <p><i> <b>Aqua blue indicates a bullish reversal</b>. Rising prices are expected, as the two bullish engulfings prove in this graphic. </i></p>
     </td>
   </tr>
 </table>
@@ -92,20 +92,20 @@ Based on priority, here are the candle-patterns that my scripts detects:
 
 
 <h2>4. How to Install and Run the Project</h2>
-<p><strong>Step 1.</strong> Include the class-file in your trading robot. The file-path in the include section might change depending on where you place the file:</p>
+<p><strong>Step 1.</strong> Include the class file in your trading robot. The file-path (inside the "#include" preprocessor directive) might change depending on your folder structure or where you place the file:</p>
 
 ```MQL5
 #include <__SimonG\MS\CandlestickPatternScanner\CandlestickPatternScanner.mqh>
 ```
 <p><strong>Step 2.</strong> Declare two global or local variables of type <em>"CandlestickPatternScanner"</em> and <em>"CandlestickPattern"</em>. 
-Note that <em>"CandlestickPatternScanner"</em> detects and throws up objects of type <em>"CandlestickPattern"</em>, which are captured and stored at pointer location as defined below:</p>
+Note that <em>"CandlestickPatternScanner"</em> detects, stores and retrieves objects of type <em>"CandlestickPattern"</em>, which are captured and saved at pointer location, as defined below:</p>
 
 ```MQL5
 CandlestickPatternScanner * cps;
 CandlestickPattern * patternDetected;
 ```
 
-<p><strong>Step 3.</strong> Initiaze the CandlestickPatternScanner object. The best place for this is inside the OnInit() function.
+<p><strong>Step 3.</strong> Initialize the CandlestickPatternScanner object. The best place for this is inside the OnInit() function.
 
 ```MQL5
 int OnInit(){
@@ -119,8 +119,9 @@ int OnInit(){
 }
 ```
   
-<p><strong>Step 4.</strong> Activate the CandlestickPatternScanner (cps), and set it up so that the CandlestickPattern (patternDetected) captures the most recent bar reversal pattern.</p>
-<p>This function detects the most recent reversal, and it also stores it inside an array of predefined-size (see previous step). Even though we write this piece of code inside <strong>OnTick()</strong>, becuase of the internal structure of CandlestickPatternScanner class, it is only called every PERIOD_CURRENT minutes. (5min, 15min, ... 1 Day)</p>
+<p><strong>Step 4.</strong> Activate the CandlestickPatternScanner (cps), and set it up so that it extracts the most recent price reversal pattern (captured at pointer variable CandlestickPattern (patternDetected)).</p>
+<p>This function detects the most recent reversal and stores it inside an array of predefined-size (see previous step). Even though we write this piece of code inside <strong>OnTick()</strong>, because of the internal structure of CandlestickPatternScanner class, the function is only called every PERIOD_CURRENT minutes. (5min, 15min, ... 1 Day).</p>
+<p>This periodicity can either be your current timeframe (PERIOD_CURRENT) or any other desired chart timeframe: PERIOD_M15, PERIOD_H4, PERIOD_D (check MQL5 specs).</p>
 
 ```MQL5
 void OnTick(){
@@ -128,7 +129,7 @@ void OnTick(){
 }
 ```
 
-<p><strong>Step 5.</strong> Everything is set-up. Use both objects and the most recently detected reversal pattern (bullish / bearish) in logical algorithm to determine trading outcome.</p>
+<p><strong>Step 5.</strong> Everything is set up. Use both objects and the most recently detected reversal pattern (bullish / bearish) in your code logic for the algorithm, to determine trading outcome.</p>
 
 ```MQL5
 bool validateOpenBuy (){
@@ -152,8 +153,8 @@ bool validateOpenSell (){
 }
 ```
 
-<p><strong>Step 6.</strong> Memory clean-up, optimization, object deletion. Clean-up is by default automatically performed by CandlestickPatternScanner in two ways:</p>
-<p>Patterns in the internal storage-array are deleted once broken. Secondly, since the array has a LIFO structure (Last-In-First-Out), whenever a new object is detected and stored, the last one is popped out and deleted. Eliminating the CandlestickPatternScanner, removes the array and the objects inside: </p>
+<p><strong>Step 6.</strong> Memory clean-up, optimization, object deletion. Clean-up is by default automatically performed by the CandlestickPatternScanner in two ways:</p>
+<p>Patterns in the internal storage-array are deleted once broken. Secondly, since the array has a LIFO structure (Last-In-First-Out), whenever a new object is detected and stored, the last one (oldest one) is popped out and deleted. Closing/stopping the EA-bot eliminates the CandlestickPatternScanner objects, which removes the array and the CandlestickPattern objects inside of it: </p>
 
 ```MQL5
 void OnDeinit (const int reason){
@@ -163,7 +164,7 @@ void OnDeinit (const int reason){
 ```
 
 <h2>5. How to Use the Project</h2>
-<p>Now that we know how to install and run the project, let's see how to use it. I shall provide a bunch of ideas for trading robots:</p>
+<p>Now that we know how to install and run the project, let's see how we can use it. I shall provide a bunch of ideas for trading robots:</p>
 
 | Pattern            | Moving Average    | Trading Outcome   |
 | :---               |     :---          |          ---:     |
@@ -175,12 +176,6 @@ void OnDeinit (const int reason){
 | :---               |     :---             |          ---:     |
 | Bullish Pattern    | Overbought (RSI<30)  | Open BUY trade.   |
 | Bearish Pattern    | Oversold (RSI>30)    | Open SELL trade.  |
-
-
-| Pattern                         | Price                            | MACD                          | Trading Outcome   |
-| :---                            |     :---                         |     :---                      |          ---:     |
-| Bullish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Value above Signal on H1/H4.  | Open BUY trade.   |
-| Bearish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Signal above Value on H1/H4.  | Open SELL trade.  |
 
 
 | Pattern            | Bollinger Bands         | Trading Outcome   |
@@ -195,8 +190,20 @@ void OnDeinit (const int reason){
 | Bearish Pattern    | Red Cloud (Leading B)    | Open SELL trade.  |
 
 
+| Pattern                         | Price                            | MACD                          | Trading Outcome   |
+| :---                            |     :---                         |     :---                      |          ---:     |
+| Bullish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Value above Signal on H1/H4.  | Open BUY trade.   |
+| Bearish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Signal above Value on H1/H4.  | Open SELL trade.  |
+
+
+| Pattern                         | Price                            | MACD                                      | Trading Outcome   |
+| :---                            |     :---                         |     :---                                  |          ---:     |
+| Bullish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Value is negative and below a threshold.  | Open BUY trade.   |
+| Bearish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Value is posative and above a threshold.  | Open SELL trade.  |
+
+
 <h2>6. Credits</h2>
-<p>I can't credit anyone directly, but this section seems appropriate because I owe special thanks to so many course creators, chanels, youtubers.</p>
+<p>I can't credit anyone directly, but this section seems appropriate because I owe special thanks to so many course & content creators, chanels, youtubers.</p>
 <p>1. MQL4 Programming. Visit https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured </p>
 <p>2. ForexBoat Team. Check out https://www.udemy.com/course/learn-mql4/ </p> 
 <p>These guys create amazing content and I have learned so much from them!</p>
