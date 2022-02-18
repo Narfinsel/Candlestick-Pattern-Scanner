@@ -22,8 +22,8 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 3. [Project Description](#3-project-description)
    - [Definition & Terminology](#definition--terminology)
 4. [How to Install and Run the Project](#4-how-to-install-and-run-the-project)
-5. [How to Tweak and Configure the Scanner Script Functionality](#4-how-to-tweak-and-configure-the-scanner-script-functionality)
-6. [How to Use the Project](#5-how-to-use-the-project)
+5. [How to Tweak and Configure the Scanner Script Functionality](#5-how-to-tweak-and-configure-the-scanner-script-functionality)
+6. [How to Use the Project](#6-how-to-use-the-project)
 7. [Credits](#7-credits)
 8. [License](#8-license)
 
