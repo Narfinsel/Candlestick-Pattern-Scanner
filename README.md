@@ -15,8 +15,7 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 <strong>Solution</strong> <p>My script identifies reversal patterns, it converts them into objects stored in an array. There is an option to customize how rigid the pattern-detection should be, to mark out only the strongest reversal signals. Visual square markings can be customized as well (color, style and thickness), for bullish and bearish patterns. I even optimized memory usage, by making sure to delete older patterns, or broken ones. Reversal patterns have many attributes and my code can read, change, and distinguish reversals based on their properties - to decide which trading actions to undertake.</p>
 
 
-
-## Table of Contents
+<h2>2. Table of Contents</h2>
 1. [Intro](#1-intro)
 2. [Table of Contents](#2table-of-contents)
 3. [Project Description](#3-project-description)
