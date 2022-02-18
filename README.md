@@ -7,7 +7,7 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
   </a>
 </p>
 
-<details><summary>Table of Contents</summary>
+<details><summary># Table of Contents</summary>
   <p>
     1. [Intro](#1-intro)
     2. [Project Description](#2-project-description)
