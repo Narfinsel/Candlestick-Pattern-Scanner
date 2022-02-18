@@ -17,7 +17,7 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 
 ## 2. Table of Contents
 1. [Intro](#1-intro)
-2. [Table of Contents](#2table-of-contents)
+2. [Table of Contents](#2-table-of-contents)
 3. [Project Description](#3-project-description)
    - [Definition & Terminology](#definition--terminology)
 4. [How to Install and Run the Project](#4-how-to-install-and-run-the-project)
