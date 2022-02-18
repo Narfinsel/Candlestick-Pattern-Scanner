@@ -8,14 +8,16 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 </p>
 
 <details><summary>Table of Contents</summary>
-  [1. Intro](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#1-intro)
-  [2. Project Description](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#2-project-description)
-    [2.1. Definition & Terminology](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#definition--terminology)
-  [3. How to Install and Run the Project](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#3-how-to-install-and-run-the-project)
-  [5. How to Use the Project](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#5-how-to-use-the-project)
-  [6. Credits](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#6-credits)
-  [7. License](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#7-license)
-<p>
+  <p>
+    [1. Intro](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#1-intro)
+    [2. Project Description](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#2-project-description)
+      [2.1. Definition & Terminology](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#definition--terminology)
+    [3. How to Install and Run the Project](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#3-how-to-install-and-run-the-project)
+    [5. How to Use the Project](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#5-how-to-use-the-project)
+    [6. Credits](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#6-credits)
+    [7. License](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#7-license)
+  </p>
+</details>
 
 
 
@@ -32,7 +34,7 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
     </a>
   </p>
 
-<h3>Definition & Terminology</h3>
+<h3>2.1. Definition & Terminology</h3>
   <p>What are <strong><em>bearish reversal patterns</em></strong>? [RED] Bearish consolidations & engulfings, along with evening stars are price bar signals, indicating that the price will be going downwards. It will continue dropping or reverse & fall, after an uptrend.</p>
   <p>What are <strong><em>bullish reversal patterns</em></strong>? [GREEN] Bullish patterns (consolidations, engulfings and morning stars) are a signal of rising prices. The price will be moving upwards, or reverse from downtrend to uptrend.</p>  
 
