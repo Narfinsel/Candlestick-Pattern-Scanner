@@ -21,9 +21,9 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 2. [Table of Contents](#2table-of-contents)
 3. [Project Description](#3-project-description)
    - [Definition & Terminology](#definition--terminology)
-4. [How to Install and Run the Project](#3-how-to-install-and-run-the-project)
-5. [How to Use the Project](#5-how-to-use-the-project)
-6. [How to Tweak and Configure the Scanner Script Functionality](#6-how-to-tweak-and-configure-the-scanner-script-functionality)
+4. [How to Install and Run the Project](#4-how-to-install-and-run-the-project)
+5. [How to Tweak and Configure the Scanner Script Functionality](#4-how-to-tweak-and-configure-the-scanner-script-functionality)
+6. [How to Use the Project](#5-how-to-use-the-project)
 7. [Credits](#7-credits)
 8. [License](#8-license)
 
@@ -181,11 +181,11 @@ void OnDeinit (const int reason){
 
 
 
-<h2>5. How to Tweak and Configure the Scrips</h2>
+<h2>5. How to Tweak and Configure the Scanner Script Functionality</h2>
 <p>This is how you can configure your scripts.</p>
 
 
-<h2>6. How to Tweak and Configure the Scanner Script Functionality</h2>
+<h2>6. How to Use the Project</h2>
 <p>Now that we know how to install and run the project, let's see how we can use it. I shall provide a bunch of ideas for trading robots:</p>
 
 | Pattern            | Moving Average    | Trading Outcome   |
