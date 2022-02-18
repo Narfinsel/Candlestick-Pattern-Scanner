@@ -18,15 +18,18 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 
 ## Table of Contents
 1. [Intro](#1-intro)
-2. [Project Description](#2-project-description)
+2. [Table of Contents](#2table-of-contents)
+3. [Project Description](#3-project-description)
    - [Definition & Terminology](#definition--terminology)
-3. [How to Install and Run the Project](#3-how-to-install-and-run-the-project)
+4. [How to Install and Run the Project](#3-how-to-install-and-run-the-project)
 5. [How to Use the Project](#5-how-to-use-the-project)
-6. [Credits](#6-credits)
-7. [License](#7-license)
+6. [How to Tweak and Configure the Scanner Script Functionality](#6-how-to-tweak-and-configure-the-scanner-script-functionality)
+7. [Credits](#7-credits)
+8. [License](#8-license)
 
 
-<h2>2. Project Description</h2>
+
+<h2>3. Project Description</h2>
   <p align="center" dir="auto">
     <a target="_blank" rel="noopener noreferrer" href="/img/candle-patterns-red-green-v1.PNG">
       <img src="/img/candle-patterns-red-green-v1.PNG" alt="Green Red Bullish Bearish Reversals">
@@ -104,7 +107,7 @@ Based on priority, my scripts detects the following candle-patterns:
 </p>
 
 
-<h2>3. How to Install and Run the Project</h2>
+<h2>4. How to Install and Run the Project</h2>
 <p><strong>Step 1.</strong> Include the class file in your trading robot. The file-path (inside the "#include" preprocessor directive) might change depending on your folder structure or where you place the file:</p>
 
 ```MQL5
@@ -176,7 +179,13 @@ void OnDeinit (const int reason){
 }
 ```
 
-<h2>5. How to Use the Project</h2>
+
+
+<h2>5. How to Tweak and Configure the Scrips</h2>
+<p>This is how you can configure your scripts.</p>
+
+
+<h2>6. How to Tweak and Configure the Scanner Script Functionality</h2>
 <p>Now that we know how to install and run the project, let's see how we can use it. I shall provide a bunch of ideas for trading robots:</p>
 
 | Pattern            | Moving Average    | Trading Outcome   |
@@ -215,12 +224,12 @@ void OnDeinit (const int reason){
 | Bearish Engulfing on D/W/Mo     | Reach engulf. conterminous line  | Value is posative and above a threshold.  | Open SELL trade.  |
 
 
-<h2>6. Credits</h2>
+<h2>7. Credits</h2>
 <p>I can't credit anyone directly, but this section seems appropriate because I owe special thanks to so many course & content creators, chanels, youtubers.</p>
 <p>1. MQL4 Programming. Visit https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured </p>
 <p>2. ForexBoat Team. Check out https://www.udemy.com/course/learn-mql4/ </p> 
 <p>These guys create amazing content and I have learned so much from them!</p>
 
-<h2>7. License</h2>
+<h2>8. License</h2>
 <p>Feel free to use this project for yourself. Or to edit it, use bits of it. Do not commercialize it!
 My Candlestick-Pattern-Scanner project is licensed under the GNU AGPLv3 license. Check out the licence link to better understand what you can and cannot do with this code. </p>
