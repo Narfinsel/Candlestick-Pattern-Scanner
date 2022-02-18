@@ -9,13 +9,13 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 
 <details><summary>Table of Contents</summary>
   <p>
-    [1. Intro](#1-intro)
-    [2. Project Description](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#2-project-description)
-      [2.1. Definition & Terminology](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#definition--terminology)
-    [3. How to Install and Run the Project](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#3-how-to-install-and-run-the-project)
-    [5. How to Use the Project](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#5-how-to-use-the-project)
-    [6. Credits](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#6-credits)
-    [7. License](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#7-license)
+    1. [Intro](#1-intro)
+    2. [Project Description](#2-project-description)
+      2.1. [Definition & Terminology](#definition--terminology)
+    3. [How to Install and Run the Project](#3-how-to-install-and-run-the-project)
+    5. [How to Use the Project](#5-how-to-use-the-project)
+    6. [Credits](#6-credits)
+    7. [License](#7-license)
   </p>
 </details>
 
