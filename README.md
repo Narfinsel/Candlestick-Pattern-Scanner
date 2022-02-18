@@ -7,25 +7,16 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
   </a>
 </p>
 
-<details><summary>CLICK ME</summary>
+<details><summary>Table of Contents</summary>
+  [1. Intro](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#1-intro)
+  [2. Project Description](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#2-project-description)
+    [2.1. Definition & Terminology](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#definition--terminology)
+  [3. How to Install and Run the Project](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#3-how-to-install-and-run-the-project)
+  [5. How to Use the Project](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#5-how-to-use-the-project)
+  [6. Credits](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#6-credits)
+  [7. License](https://github.com/Narfinsel/Candlestick-Pattern-Scanner#7-license)
 <p>
 
-#### We can hide anything, even code!
-
-    ```ruby
-      puts "Hello World"
-    ```
-
-</p>
-</details>
-
-
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-## Headers
 
 
 <h2>1. Intro</h2>
@@ -112,7 +103,7 @@ Based on priority, my scripts detects the following candle-patterns:
 </p>
 
 
-<h2>4. How to Install and Run the Project</h2>
+<h2>3. How to Install and Run the Project</h2>
 <p><strong>Step 1.</strong> Include the class file in your trading robot. The file-path (inside the "#include" preprocessor directive) might change depending on your folder structure or where you place the file:</p>
 
 ```MQL5
