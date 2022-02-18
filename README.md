@@ -9,13 +9,7 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
 
 <details><summary># Table of Contents</summary>
   <p>
-    1. [Intro](#1-intro)
-    2. [Project Description](#2-project-description)
-      - [Definition & Terminology](#definition--terminology)
-    3. [How to Install and Run the Project](#3-how-to-install-and-run-the-project)
-    5. [How to Use the Project](#5-how-to-use-the-project)
-    6. [Credits](#6-credits)
-    7. [License](#7-license)
+
   </p>
 </details>
 
@@ -44,7 +38,7 @@ The Candlestick Pattern Scanner is a utility class that helps Expert Advisors an
     </a>
   </p>
 
-<h3>2.1. Definition & Terminology</h3>
+<h3>Definition & Terminology</h3>
   <p>What are <strong><em>bearish reversal patterns</em></strong>? [RED] Bearish consolidations & engulfings, along with evening stars are price bar signals, indicating that the price will be going downwards. It will continue dropping or reverse & fall, after an uptrend.</p>
   <p>What are <strong><em>bullish reversal patterns</em></strong>? [GREEN] Bullish patterns (consolidations, engulfings and morning stars) are a signal of rising prices. The price will be moving upwards, or reverse from downtrend to uptrend.</p>  
 
