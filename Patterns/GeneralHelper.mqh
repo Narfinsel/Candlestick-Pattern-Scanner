@@ -75,8 +75,8 @@ void draw3ForTimeWithDelete (string objectName, datetime timeDate, int lineColor
    string name = TimeToStr(timeDate, TIME_DATE|TIME_MINUTES);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectDelete(objectName);
-   ObjectCreate(objectName, OBJ_VLINE, 0, timeDate, 0);
+   ObjectDelete(NULL,objectName);
+   ObjectCreate(NULL,objectName, OBJ_VLINE, 0, timeDate, 0);
    ObjectSet(objectName, OBJPROP_WIDTH, lineThickness);
    ObjectSet(objectName, OBJPROP_COLOR, lineColor);
    ObjectSet(objectName, OBJPROP_BACK, true);

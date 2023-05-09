@@ -7,11 +7,11 @@
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
-#include <__SimonG\MS\CandlestickPatternScanner\Patterns\CandlestickPattern.mqh>
-#include <__SimonG\MS\CandlestickPatternScanner\Patterns\ConsolidationPattern.mqh>
-#include <__SimonG\MS\CandlestickPatternScanner\Patterns\EngulfingPattern.mqh>
-#include <__SimonG\MS\CandlestickPatternScanner\Patterns\StarPattern.mqh>
-#include <__SimonG\Helpers\GeneralHelper.mqh>
+#include <..\Patterns\CandlestickPattern.mqh>
+#include <..\Patterns\ConsolidationPattern.mqh>
+#include <..\Patterns\EngulfingPattern.mqh>
+#include <..\Patterns\StarPattern.mqh>
+#include <..\Patterns\GeneralHelper.mqh>
 
 class CandlestickPatternScanner {
    private:
