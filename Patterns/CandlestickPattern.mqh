@@ -6,9 +6,9 @@
 #property copyright "SimonG"
 #property link      "https://www.mql5.com"
 #property strict
-//#include <..\CandlestickPatternScanner\Helpers\GeneralDrawer.mqh>
+#include <..\..\Helpers\GeneralDrawer.mqh>
 
-#include    "GeneralDrawer.mqh"
+////#include    "GeneralDrawer.mqh"
 
 
 enum ENUM_CANDLE_PATTERN {
@@ -153,7 +153,7 @@ void CandlestickPattern :: setupCandlestickPattern (string aSymbol, ENUM_TIMEFRA
    this.cpTimeframe = aTimeframe;
    this.cpType = aCandlePattern;
    this.cpStartDate = aTimestart;
-   this.cpRectName = " Rect_ " + aSymbol +aTimeframe+ "_" + aCandlePattern +  "_" + aTimestart;
+   this.cpRectName = " Rect_ " + aSymbol + TimeToString(aTimeframe) + "_" + EnumToString (aCandlePattern) +  "_" + TimeToString(aTimestart,TIME_DATE) ;
    
 
    
