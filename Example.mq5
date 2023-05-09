@@ -1,9 +1,12 @@
+//Step 1. Include the class file in your trading robot. 
+//The file-path (inside the "#include" preprocessor directive) might change depending on your folder structure or where you place the file:
+
 #include "CandlestickPatternScanner.mqh"
 
-
+//Step 2. Declare two global or local variables of type "CandlestickPatternScanner" and "CandlestickPattern". Note that "CandlestickPatternScanner" detects, stores and retrieves objects of type "CandlestickPattern", which are captured and saved at pointer location, as defined below:
 CandlestickPatternScanner * cps;
 CandlestickPattern * patternDetected;
-
+//Step 3. Initialize the CandlestickPatternScanner object. The best place for this is inside the OnInit() function.
 int OnInit(){
    cps = new CandlestickPatternScanner (Symbol(), PERIOD_CURRENT, 15, true);
    cps.adjust_Settings_Graphic_BearishReversals (clrDeepPink, STYLE_SOLID, 4);
@@ -15,10 +18,13 @@ int OnInit(){
 
    return(INIT_SUCCEEDED);
 }
+// Step 4. Activate the CandlestickPatternScanner (cps), and set it up so that it extracts the most recent price reversal pattern (captured at pointer variable CandlestickPattern (patternDetected)).
 
 void OnTick(){
    patternDetected = cps.updateAndReturn_Cps_onNewBar();
 }
+
+// Step 5. Everything is set up. Use both objects and the most recently detected reversal pattern (bullish / bearish) in your code logic for the algorithm, to determine trading outcome.
 
 bool validateOpenBuy (){
    if(patternDetected != NULL){
@@ -39,7 +45,7 @@ bool validateOpenSell (){
    }
    return false;
 }
-
+//Step 6. Memory clean-up, optimization, object deletion. Clean-up is by default automatically performed by the CandlestickPatternScanner in two ways:
 void OnDeinit (const int reason){
    delete cps;
    delete patternDetected;
