@@ -41,97 +41,97 @@ GeneralHelper :: GeneralHelper(){}
 // ------------------------------------------------------------------------------------------------------ +
 // ------------------------------------------- VERTICAL LINE -------------------------------------------- +
 void draw3DetailedForTime (datetime timeDate, int lineColor, int lineThickness, ENUM_LINE_STYLE lineStyle){
-   string name = TimeToStr(timeDate, TIME_DATE|TIME_MINUTES);
+   string name = TimeToString(timeDate);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectCreate(name, OBJ_VLINE, 0, timeDate, 0);
-   ObjectSet(name, OBJPROP_WIDTH, lineThickness);
-   ObjectSet(name, OBJPROP_COLOR, lineColor);
-   ObjectSet(name, OBJPROP_BACK, true);
-   ObjectSet(name, OBJPROP_STYLE, lineStyle);
+   ObjectCreate(NULL,name, OBJ_VLINE, 0, timeDate, 0);
+   ObjectSetInteger(NULL,name, OBJPROP_WIDTH, lineThickness);
+   ObjectSetInteger(NULL,name, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,name, OBJPROP_BACK, true);
+   ObjectSetInteger(NULL,name, OBJPROP_STYLE, lineStyle);
 }
 void draw3DetailedForTimeWithDelete (string objectName, datetime timeDate, int lineColor, int lineThickness, ENUM_LINE_STYLE lineStyle){
-   string name = TimeToStr(timeDate, TIME_DATE|TIME_MINUTES);
+   string name = TimeToString(timeDate, TIME_DATE|TIME_MINUTES);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectDelete(objectName);
-   ObjectCreate(objectName, OBJ_VLINE, 0, timeDate, 0);
-   ObjectSet(objectName, OBJPROP_WIDTH, lineThickness);
-   ObjectSet(objectName, OBJPROP_COLOR, lineColor);
-   ObjectSet(objectName, OBJPROP_BACK, true);
-   ObjectSet(name, OBJPROP_STYLE, lineStyle);
+   ObjectDelete(NULL,objectName);
+   ObjectCreate(NULL,objectName, OBJ_VLINE, 0, timeDate, 0);
+   ObjectSetInteger(NULL,objectName, OBJPROP_WIDTH, lineThickness);
+   ObjectSetInteger(NULL,objectName, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,objectName, OBJPROP_BACK, true);
+   ObjectSetInteger(NULL,name, OBJPROP_STYLE, lineStyle);
 }
 
 void draw3ForTime (datetime timeDate, int lineColor, int lineThickness){
-   string name = TimeToStr(timeDate, TIME_DATE|TIME_MINUTES);
+   string name = TimeToString(timeDate, TIME_DATE|TIME_MINUTES);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectCreate(name, OBJ_VLINE, 0, timeDate, 0);
-   ObjectSet(name, OBJPROP_WIDTH, lineThickness);
-   ObjectSet(name, OBJPROP_COLOR, lineColor);
-   ObjectSet(name, OBJPROP_BACK, true);
+   ObjectCreate(NULL,name, OBJ_VLINE, 0, timeDate, 0);
+   ObjectSetInteger(NULL,name, OBJPROP_WIDTH, lineThickness);
+   ObjectSetInteger(NULL,name, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,name, OBJPROP_BACK, true);
 }
 void draw3ForTimeWithDelete (string objectName, datetime timeDate, int lineColor, int lineThickness){
-   string name = TimeToStr(timeDate, TIME_DATE|TIME_MINUTES);
+   string name = TimeToString(timeDate, TIME_DATE|TIME_MINUTES);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectDelete(objectName);
-   ObjectCreate(objectName, OBJ_VLINE, 0, timeDate, 0);
-   ObjectSet(objectName, OBJPROP_WIDTH, lineThickness);
-   ObjectSet(objectName, OBJPROP_COLOR, lineColor);
-   ObjectSet(objectName, OBJPROP_BACK, true);
+   ObjectDelete(NULL,objectName);
+   ObjectCreate(NULL,objectName, OBJ_VLINE, 0, timeDate, 0);
+   ObjectSetInteger(NULL,objectName, OBJPROP_WIDTH, lineThickness);
+   ObjectSetInteger(NULL,objectName, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,objectName, OBJPROP_BACK, true);
 }
 
 void draw4ForBar (int timeBar, int lineColor, int lineThickness){
    datetime timestamp = iTime(Symbol(), Period(), timeBar);
-   string name = TimeToStr(timestamp, TIME_DATE|TIME_MINUTES);
+   string name = TimeToString(timestamp, TIME_DATE|TIME_MINUTES);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectCreate(name, OBJ_VLINE, 0, timestamp, 0);
-   ObjectSet(name, OBJPROP_WIDTH, lineThickness);
-   ObjectSet(name, OBJPROP_COLOR, lineColor);
-   ObjectSet(name, OBJPROP_BACK, true);
+   ObjectCreate(NULL,name, OBJ_VLINE, 0, timestamp, 0);
+   ObjectSetInteger(NULL,name, OBJPROP_WIDTH, lineThickness);
+   ObjectSetInteger(NULL,name, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,name, OBJPROP_BACK, true);
 }
 void draw4ForBar (string symbol, ENUM_TIMEFRAMES timeframe, int timeBar, int lineColor, int lineThickness){
    datetime timestamp = iTime(symbol, timeframe, timeBar);
-   string name = TimeToStr(timestamp, TIME_DATE|TIME_MINUTES);
+   string name = TimeToString(timestamp, TIME_DATE|TIME_MINUTES);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectCreate(name, OBJ_VLINE, 0, timestamp, 0);
-   ObjectSet(name, OBJPROP_WIDTH, lineThickness);
-   ObjectSet(name, OBJPROP_COLOR, lineColor);
-   ObjectSet(name, OBJPROP_BACK, true);
+   ObjectCreate(NULL,name, OBJ_VLINE, 0, timestamp, 0);
+   ObjectSetInteger(NULL,name, OBJPROP_WIDTH, lineThickness);
+   ObjectSetInteger(NULL,name, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,name, OBJPROP_BACK, true);
 }
 void draw4ForBarWithDelete (string symbol, ENUM_TIMEFRAMES timeframe, string objectName, int timeBar, int lineColor, int lineThickness){
    datetime timestamp = iTime(symbol, timeframe, timeBar);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectDelete(objectName);
-   ObjectCreate(objectName, OBJ_VLINE, 0, timestamp, 0);
-   ObjectSet(objectName, OBJPROP_WIDTH, lineThickness);
-   ObjectSet(objectName, OBJPROP_COLOR, lineColor);
-   ObjectSet(objectName, OBJPROP_BACK, true);
+   ObjectDelete(NULL,objectName);
+   ObjectCreate(NULL,objectName, OBJ_VLINE, 0, timestamp, 0);
+   ObjectSetInteger(NULL,objectName, OBJPROP_WIDTH, lineThickness);
+   ObjectSetInteger(NULL,objectName, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,objectName, OBJPROP_BACK, true);
 }
 void draw4ForBar (string objectName, string symbol, ENUM_TIMEFRAMES timeframe, int timeBar, int lineColor, int lineThickness){
    datetime timestamp = iTime(symbol, timeframe, timeBar);
-   ObjectDelete(objectName);
+   ObjectDelete(NULL,objectName);
    if(lineThickness < 1)    lineThickness= 1;
    if(lineThickness > 5)    lineThickness= 5;
-   ObjectCreate(objectName, OBJ_VLINE, 0, timestamp, 0);
-   ObjectSet(objectName, OBJPROP_WIDTH, lineThickness);
-   ObjectSet(objectName, OBJPROP_COLOR, lineColor);
-   ObjectSet(objectName, OBJPROP_BACK, true);
+   ObjectCreate(NULL,objectName, OBJ_VLINE, 0, timestamp, 0);
+   ObjectSetInteger(NULL,objectName, OBJPROP_WIDTH, lineThickness);
+   ObjectSetInteger(NULL,objectName, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,objectName, OBJPROP_BACK, true);
 }
 
 // ------------------------------------------------------------------------------------------------------ +
 // ------------------------------------------ HORIZONTAL LINE ------------------------------------------- +
 
 void drawHorizontalLine1(string objectName, double priceLevel, int lineColor){                 // WORKS!!!   
-   ObjectDelete(objectName);
-   ObjectCreate(objectName, OBJ_HLINE, 0, 0, priceLevel);
-   ObjectSet(objectName, OBJPROP_WIDTH, 1);
-   ObjectSet(objectName, OBJPROP_COLOR, lineColor);
-   ObjectSet(objectName, OBJPROP_BACK, true);
+   ObjectDelete(NULL,objectName);
+   ObjectCreate(NULL,objectName, OBJ_HLINE, 0, 0, priceLevel);
+   ObjectSetInteger(NULL,objectName, OBJPROP_WIDTH, 1);
+   ObjectSetInteger(NULL,objectName, OBJPROP_COLOR, lineColor);
+   ObjectSetInteger(NULL,objectName, OBJPROP_BACK, true);
 }
 
 void drawHorizontalLines_Min_Max(double minPriceLevel, double maxPriceLevel, int lineColorMin, int lineColorMax){
@@ -146,16 +146,16 @@ void drawHorizontalLines_Min_Max_Base(double minPriceLevel, double maxPriceLevel
 }
 
 void drawHorizontalLines_Min_Max_WithName(string objectName, double minPriceLevel, double maxPriceLevel, int lineColorMin, int lineColorMax){
-   string objectName1 = StringConcatenate(objectName, "1");
-   string objectName2 = StringConcatenate(objectName, "2");
+   string objectName1 = objectName + "1";
+   string objectName2 = objectName + "2";
    drawHorizontalLine1(objectName1, minPriceLevel, lineColorMin);
    drawHorizontalLine1(objectName2, maxPriceLevel, lineColorMax);
 }
 
 void drawHorizontalLines_Min_Max_Base_WithName(string objectName, double minPriceLevel, double maxPriceLevel, double basePriceLeve, int lineColorMin, int lineColorMax, int lineColorBase){
-   string objectName1 = StringConcatenate(objectName, "1");
-   string objectName2 = StringConcatenate(objectName, "2");
-   string objectName3 = StringConcatenate(objectName, "3");
+   string objectName1 = objectName + "1";
+   string objectName2 = objectName+ "2";
+   string objectName3 = objectName+ "3";
    drawHorizontalLine1(objectName1, minPriceLevel, lineColorMin);
    drawHorizontalLine1(objectName2, basePriceLeve, lineColorBase);
    drawHorizontalLine1(objectName3, maxPriceLevel, lineColorMax);
@@ -180,13 +180,13 @@ string convertSignToText(int value){
 bool createVerticalSegment (string nameSegment, int BarX, double P0, double P1, color clr, int thickness){
    bool ray = false;
    datetime TimeX = iTime(Symbol(), PERIOD_CURRENT, BarX);
-   if(ObjectFind(nameSegment) >= 0)
-      ObjectDelete(nameSegment);
-   if( !ObjectCreate (nameSegment, OBJ_TREND, 0, TimeX, P0, TimeX, P1))
+   if(ObjectFind(NULL,nameSegment) >= 0)
+      ObjectDelete(NULL,nameSegment);
+   if( !ObjectCreate (NULL,nameSegment, OBJ_TREND, 0, TimeX, P0, TimeX, P1))
       return(false);
-   ObjectSet(nameSegment, OBJPROP_RAY, ray);
-   ObjectSet(nameSegment, OBJPROP_WIDTH, thickness);
-   ObjectSet(nameSegment, OBJPROP_COLOR, clr);
+   ObjectSetInteger(NULL,nameSegment, OBJPROP_RAY, ray);
+   ObjectSetInteger(NULL,nameSegment, OBJPROP_WIDTH, thickness);
+   ObjectSetInteger(NULL,nameSegment, OBJPROP_COLOR, clr);
    return(true); 
 }
 
@@ -196,14 +196,14 @@ bool createHorizontalSegment (string nameSegment, int Bar0, int Bar1, double Px,
    bool ray = false;
    datetime T0 = iTime(Symbol(), PERIOD_CURRENT, Bar0);
    datetime T1 = iTime(Symbol(), PERIOD_CURRENT, Bar1);
-   if(ObjectFind(nameSegment) >= 0)
-      ObjectDelete(nameSegment);
-   if( !ObjectCreate(nameSegment, OBJ_TREND, 0, T0, Px, T1, Px)){
+   if(ObjectFind(NULL,nameSegment) >= 0)
+      ObjectDelete(NULL,nameSegment);
+   if( !ObjectCreate(NULL,nameSegment, OBJ_TREND, 0, T0, Px, T1, Px)){
       return(false);
    }
-   ObjectSet(nameSegment, OBJPROP_RAY, ray);
-   ObjectSet(nameSegment, OBJPROP_WIDTH, thickness);
-   ObjectSet(nameSegment, OBJPROP_COLOR, clr);
+   ObjectSetInteger(NULL,nameSegment, OBJPROP_RAY, ray);
+   ObjectSetInteger(NULL,nameSegment, OBJPROP_WIDTH, thickness);
+   ObjectSetInteger(NULL,nameSegment, OBJPROP_COLOR, clr);
    return(true); 
 }
 
@@ -264,7 +264,7 @@ string displayDoubleArray(string textHeader, double & array[]){
    for(int i=0; i< ArraySize(array); i++)      
       textArray += string( NormalizeDouble(array[i], 5)) + "   ";
    
-   textFinal = StringConcatenate(textHeader, textArray);
+   textFinal = textHeader + textArray;
    return textFinal;
 }
 

@@ -7,12 +7,12 @@
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
-#include <__SimonG\MS\CandlestickPatternScanner\Patterns\CandlestickPattern.mqh>
-#include <__SimonG\MS\CandlestickPatternScanner\Patterns\ConsolidationPattern.mqh>
-#include <__SimonG\MS\CandlestickPatternScanner\Patterns\EngulfingPattern.mqh>
-#include <__SimonG\MS\CandlestickPatternScanner\Patterns\StarPattern.mqh>
-#include <__SimonG\Helpers\GeneralHelper.mqh>
-
+#include <..\Patterns\CandlestickPattern.mqh>
+#include <..\Patterns\ConsolidationPattern.mqh>
+#include <..\Patterns\EngulfingPattern.mqh>
+#include <..\Patterns\StarPattern.mqh>
+#include <..\Helpers\GeneralHelper.mqh>
+MqlTick last_tick;
 class CandlestickPatternScanner {
    private:
       string cpsSymbol;
@@ -171,14 +171,14 @@ bool CandlestickPatternScanner :: testToRemovePatternsFromArray (CandlestickPatt
          if (array[i].getPatternType() == BULLISH_MORNING_STAR ||
              array[i].getPatternType() == BULLISH_ENGULFING ||
              array[i].getPatternType() == BULLISH_CONSOLIDATION_FINISHER ){
-               if( array[i].getBorderPrice() > Bid  || 
+               if( array[i].getBorderPrice() >  last_tick.bid  || 
                    array[i].getBorderPrice() > iLow(this.cpsSymbol, this.cpsTimeframe, 1))
                      deleteCandlePatternAtPosition (i, array);
          }
          else if (array[i].getPatternType() == BEARISH_EVENING_STAR ||
                   array[i].getPatternType() == BEARISH_ENGULFING ||
                   array[i].getPatternType() == BEARISH_CONSOLIDATION_FINISHER ){
-               if( array[i].getBorderPrice() < Bid  || 
+               if( array[i].getBorderPrice() < last_tick.bid  || 
                    array[i].getBorderPrice() < iHigh(this.cpsSymbol, this.cpsTimeframe, 1))
                      deleteCandlePatternAtPosition (i, array);
          }
@@ -255,28 +255,30 @@ bool CandlestickPatternScanner :: isThisPatternBullishReversal (CandlestickPatte
 }
 
 void CandlestickPatternScanner :: checkTo_Delete_CandlestickPattern(string aSymbol, ENUM_TIMEFRAMES aTimeframe){
-   for(int i=0; i < ObjectsTotal(); i++){
-      string currentObjectName = ObjectName(i);
+   for(int i=0; i < ObjectsTotal(NULL); i++){
+      string currentObjectName = ObjectName(NULL,i);
       if( StringFind(currentObjectName, aSymbol, 0) >= 0  &&
-          StringFind(currentObjectName, StringConcatenate(aTimeframe), 0) >= 0){
+          StringFind(currentObjectName, EnumToString(aTimeframe), 0) >= 0){
             
       }      
    }
 }
 
 bool CandlestickPatternScanner :: find_CandlestickPattern_Object_byName (string aSymbol, ENUM_TIMEFRAMES aTimeframe){
-   for(int i=0; i < ObjectsTotal(); i++){
-      string currentObjectName = ObjectName(i);
+   for(int i=0; i < ObjectsTotal(NULL); i++){
+      string currentObjectName = ObjectName(NULL,i);
       if( StringFind(currentObjectName, aSymbol, 0) >= 0  &&
-          StringFind(currentObjectName, StringConcatenate(aTimeframe), 0) >= 0)
+          StringFind(currentObjectName, EnumToString(aTimeframe), 0) >= 0)
             return true;
    }
    return false;
 }
 
 string CandlestickPatternScanner :: generateNameForCp (string aSymbol, ENUM_TIMEFRAMES aTimeframe){
-   return StringConcatenate( "CP_", aSymbol, "_", aTimeframe, "__", MathRand() );
+   return "CP_"+aSymbol+ "_" + EnumToString(aTimeframe) +"__"+ DoubleToString(MathRand());
 }
+
+   
 
 
 //+------------------------------------------------------------------+
@@ -294,7 +296,7 @@ void CandlestickPatternScanner :: setupCandlestickPatternScanner (string aSymbol
    this.cpsIs5DigitBroker = aIs5DigitBroker;
    this.cpsMaxArraySize = anArraySize;
    this.cpsDoDrawCandleRects = true;
-   this.cpsPointModeSize = MarketInfo (this.cpsSymbol, MODE_POINT);
+   this.cpsPointModeSize = _Point;
    ArrayResize (this.cpArray, 0);
    adjust_Settings_Graphic_BearishReversals (clrHotPink, STYLE_SOLID, 1);
    adjust_Settings_Graphic_BullishReversals (clrSpringGreen, STYLE_SOLID, 1);

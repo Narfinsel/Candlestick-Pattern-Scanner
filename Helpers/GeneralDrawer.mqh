@@ -14,7 +14,7 @@
 bool createRectangle (long chart_id, int sub_window, string nameRect, datetime time1, double price1, datetime time2, double price2, color clr, ENUM_LINE_STYLE style, int width, bool fill, bool back, 
                       bool selection, bool hidden, long z_order){
    ResetLastError();    //--- reset the error value
-   ObjectDelete(nameRect);
+   ObjectDelete(NULL,nameRect);
    if( !ObjectCreate( chart_id, nameRect, OBJ_RECTANGLE, sub_window, time1, price1, time2, price2) ){       //--- create a rectangle by the given coordinates
       Alert(__FUNCTION__, ": failed to create a rectangle! Error code = ", GetLastError()); 
       return(false); 

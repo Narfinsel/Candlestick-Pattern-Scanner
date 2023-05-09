@@ -6,7 +6,10 @@
 #property copyright "SimonG"
 #property link      "https://www.mql5.com"
 #property strict
-#include <__SimonG\MS\CandlestickPatternScanner\Helpers\GeneralDrawer.mqh>
+#include <..\..\Helpers\GeneralDrawer.mqh>
+
+////#include    "GeneralDrawer.mqh"
+
 
 enum ENUM_CANDLE_PATTERN {
    BULLISH_CONSOLIDATION_FINISHER = 657, BULLISH_ENGULFING = 658, BULLISH_MORNING_STAR = 659,
@@ -98,7 +101,7 @@ double CandlestickPattern :: computeStarGrade(){
 // ----------------------------------------------------------------       DRAWING FUNCTIONS      ----------------------------------------------------------------------------------- //
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 bool CandlestickPattern :: unDrawRect (){
-   return ObjectDelete (this.cpRectName);
+   return ObjectDelete (NULL,this.cpRectName);
 }
 
 bool CandlestickPattern :: drawRect (long chart_id, int sub_window, color clr, ENUM_LINE_STYLE style, int width, bool fill, bool back){
@@ -114,14 +117,15 @@ bool CandlestickPattern :: vizualizeRectForPattern (long chart_id, int sub_windo
    price2= this.cpBorderPrice;
    //Print( " vizRect() ----   timeSt = ", time1, "   timeEn = ", time2, "   priceCont = ", price1, "   priceBorder = ", price2 );
    if( this.cpType == BEARISH_ENGULFING  ||  this.cpType == BEARISH_EVENING_STAR  ||  this.cpType == BEARISH_CONSOLIDATION_FINISHER){
-      price1 -= 50* MarketInfo(this.cpSymbol, MODE_POINT);
-      price2 += 50* MarketInfo(this.cpSymbol, MODE_POINT);
+      price1 -= 50* _Point;
+      
+      price2 += 50* _Point;
       createRectangle ( chart_id, sub_window, rectName, time1, price1, time2, price2, clr, style, width, fill, back, false, false, 0);
       return true;
    }
    else if( this.cpType == BULLISH_ENGULFING  ||  this.cpType == BULLISH_MORNING_STAR  ||  this.cpType == BULLISH_CONSOLIDATION_FINISHER){
-      price1 += 50* MarketInfo(this.cpSymbol, MODE_POINT);
-      price2 -= 50* MarketInfo(this.cpSymbol, MODE_POINT);
+      price1 += 50* _Point;
+      price2 -= 50* _Point;
       createRectangle ( chart_id, sub_window, rectName, time1, price1, time2, price2, clr, style, width, fill, back, false, false, 0);
       return true;
    }
@@ -149,9 +153,11 @@ void CandlestickPattern :: setupCandlestickPattern (string aSymbol, ENUM_TIMEFRA
    this.cpTimeframe = aTimeframe;
    this.cpType = aCandlePattern;
    this.cpStartDate = aTimestart;
-   this.cpRectName = StringConcatenate("Rect_", aSymbol, "_", aTimeframe, "_", aCandlePattern, "_", aTimestart);
-}
+   this.cpRectName = " Rect_ " + aSymbol + TimeToString(aTimeframe) + "_" + EnumToString (aCandlePattern) +  "_" + TimeToString(aTimestart,TIME_DATE) ;
+   
 
+   
+}    
 void CandlestickPattern :: setCpName (string aName){
    this.cpObjName = aName;
 }
